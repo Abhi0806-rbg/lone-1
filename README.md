@@ -163,7 +163,7 @@ Auto-deploy to Kubernetes
 
 🔧 How to Run (Local)
 1. Clone Repo
-git clone https://github.com/yourusername/lone-1.git
+git clone https://github.com/Abhi0806-rbg/lone-1.git
 cd lone-1
 
 2. Start Services (Docker Compose)
