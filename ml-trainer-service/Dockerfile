@@ -2,12 +2,15 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY app/ /app/
+COPY main.py /app/
+COPY preprocess.py /app/
+COPY training.py /app/
+COPY utils.py /app/
+COPY requirements.txt /app/
 COPY training_data.csv /app/
 
-RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Model storage volume
 VOLUME ["/model-storage"]
 
 EXPOSE 8002

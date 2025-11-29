@@ -1,6 +1,7 @@
+from core.config import settings
 from fastapi import FastAPI, HTTPException
-from app.training import train_models, load_metrics
-from app.core.config import settings
+
+from .training import load_metrics, train_models
 
 app = FastAPI(
     title="ML Trainer Service",

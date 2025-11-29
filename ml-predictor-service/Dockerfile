@@ -2,10 +2,13 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY app /app
+# Copy files directly (no /app/ folder exists now)
+COPY main.py /app/
+COPY preprocess.py /app/
+COPY requirements.txt /app/
+COPY model.pkl /app/model/model.pkl
 
-# Install dependencies
-RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 8001
 

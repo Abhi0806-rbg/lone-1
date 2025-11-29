@@ -1,10 +1,14 @@
-python-dotenv
-pydantic
+
 pydantic[email]
 motor
-pymongo
 httpx
 python-jose
 passlib[bcrypt]
 bcrypt
 dnspython
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-dotenv
+pymongo
+requests

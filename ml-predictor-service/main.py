@@ -1,8 +1,10 @@
-from fastapi import FastAPI, HTTPException
+import os
+
 import joblib
 import numpy as np
-from app.preprocess import preprocess_input
-import os
+from fastapi import FastAPI, HTTPException
+
+from .preprocess import preprocess_input
 
 app = FastAPI(
     title="ML Predictor Service",
